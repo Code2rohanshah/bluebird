@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Bird Salon & Spa - Premium Beauty Experience</title>
+    <link rel="icon" href="logo.jpg" type="image/jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Animation Sequence -->
+    <div class="loading-sequence" id="loadingSequence">
+        <!-- Frame 0: The Void (00:00:00) -->
+        <div class="frame-void active" id="frameVoid">
+            <div class="loading-spinner">
+                <div class="spinner-circle"></div>
+            </div>
+        </div>
+        
+        <!-- Frame 1-2: Video Smoke Animation (00:00:01-00:00:02) -->
+        <div class="frame-smoke" id="frameSmoke">
+            <div class="video-smoke-container">
+                <video 
+                    id="smokeVideo" 
+                    class="smoke-video"
+                    muted
+                    preload="auto"
+                    playsinline
+                >
+                    <source src="smoke.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <!-- Logo Glow Effect (00:00:02) -->
+            <div class="logo-glow-container" id="logoGlow">
+                <div class="central-glow"></div>
+            </div>
+        </div>
+        
+        <!-- Frame 3: Full Logo Focus (00:00:03) -->
+        <div class="frame-logo-reveal" id="frameLogoReveal">
+            <div class="logo-reveal-container">
+                <h1 class="revealed-logo">
+                    <span class="logo-text-blue">Blue Bird</span>
+                    <div class="logo-line"></div>
+                    <span class="logo-text-gold">SALON & SPA</span>
+                </h1>
+            </div>
+        </div>
+        
+        <!-- Frame 4: Static Black Screen (00:00:04-00:00:05) -->
+        <div class="frame-static" id="frameStatic">
+            <div class="static-logo-container">
+                <h1 class="static-logo">
+                    <span class="logo-text-blue">Blue Bird</span>
+                    <div class="logo-line"></div>
+                    <span class="logo-text-gold">SALON & SPA</span>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Premium Navigation (Always Visible with Transparent Dark Theme) -->
+    <nav class="premium-navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-wrapper">
+                    <img src="logo.jpg" alt="Blue Bird Logo">
+                    <div class="logo-text">
+                        <span class="brand-name">Blue Bird</span>
+                        <span class="brand-tagline">Salon</span>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Vouchers</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#more" class="nav-link">Book Appointment</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Dark Content Section (Hidden Initially) -->
+    <div class="dark-main-content" id="mainContent" style="display: none;">
+        
+        <!-- Dark Hero Section -->
+        <section class="dark-hero-section" id="home">
+            <div class="dark-hero-bg"></div>
+            <div class="dark-hero-content">
+                <div class="premium-badge">
+                    <i class="fas fa-crown"></i>
+                    <span>PREMIUM LUXURY EXPERIENCE</span>
+                </div>
+                
+                <h1 class="dark-hero-title">
+                    <span class="title-blue">BLUE BIRD</span>
+                    <div class="title-separator"></div>
+                    <span class="title-gold">SALON & SPA</span>
+                </h1>
+                
+                <p class="dark-hero-subtitle">BLOSSOM YOUR BEAUTY</p>
+                <p class="dark-hero-description">Experience unparalleled luxury and tranquility in our premium wellness sanctuary</p>
+                
+                <div class="dark-hero-cta-group">
+                    <button class="luxury-cta-primary">
+                        <span>BOOK YOUR EXPERIENCE</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="luxury-cta-secondary">
+                        <i class="fas fa-play"></i>
+                        <span>WATCH OUR STORY</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dark Services Section -->
+        <section class="dark-content-section" id="services">
+            <div class="container">
+                <div class="dark-section-header">
+                    <h2 class="dark-content-title">Featured Services</h2>
+                    <p class="dark-content-subtitle">Discover our signature treatments that define luxury</p>
+                </div>
+                
+                <div class="dark-services-grid">
+                    <div class="dark-service-card">
+                        <div class="dark-service-image">
+                            <div class="dark-model-placeholder model-1">
+                                <div class="dark-image-overlay">
+                                    <h3>Premium Hair Styling</h3>
+                                    <p>Professional cuts & styling</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dark-service-card">
+                        <div class="dark-service-image">
+                            <div class="dark-model-placeholder model-2">
+                                <div class="dark-image-overlay">
+                                    <h3>Luxury Spa Treatments</h3>
+                                    <p>Relaxation & rejuvenation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dark-service-card">
+                        <div class="dark-service-image">
+                            <div class="dark-model-placeholder model-3">
+                                <div class="dark-image-overlay">
+                                    <h3>Beauty Consultation</h3>
+                                    <p>Personalized beauty advice</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dark-service-card">
+                        <div class="dark-service-image">
+                            <div class="dark-model-placeholder model-4">
+                                <div class="dark-image-overlay">
+                                    <h3>Wellness Therapy</h3>
+                                    <p>Holistic wellness solutions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dark Gallery Section -->
+        <section class="dark-content-section" id="gallery">
+            <div class="container">
+                <div class="dark-section-header">
+                    <h2 class="dark-content-title">Our Vision</h2>
+                    <p class="dark-content-subtitle">See the artistry and elegance that defines Blue Bird</p>
+                </div>
+                
+                <div class="dark-gallery-grid">
+                    <div class="dark-gallery-item">
+                        <div class="dark-gallery-image">
+                            <div class="dark-model-placeholder gallery-1">
+                                <div class="dark-image-overlay">
+                                    <span>Professional Model Photography</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dark-gallery-item">
+                        <div class="dark-gallery-image">
+                            <div class="dark-model-placeholder gallery-2">
+                                <div class="dark-image-overlay">
+                                    <span>Studio Beauty Shots</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dark-gallery-item">
+                        <div class="dark-gallery-image">
+                            <div class="dark-model-placeholder gallery-3">
+                                <div class="dark-image-overlay">
+                                    <span>Elegant Styling</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dark-gallery-item">
+                        <div class="dark-gallery-image">
+                            <div class="dark-model-placeholder gallery-4">
+                                <div class="dark-image-overlay">
+                                    <span>Transformation Art</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dark About Section -->
+        <section class="dark-content-section" id="about">
+            <div class="container">
+                <div class="dark-about-content">
+                    <div class="dark-about-text">
+                        <div class="dark-section-header">
+                            <h2 class="dark-content-title">About Blue Bird</h2>
+                            <p class="dark-content-subtitle">Excellence in beauty, crafted with passion</p>
+                        </div>
+                        <p class="dark-about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="dark-about-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="dark-about-features">
+                            <div class="dark-feature-item">
+                                <i class="fas fa-award"></i>
+                                <span>Award Winning Excellence</span>
+                            </div>
+                            <div class="dark-feature-item">
+                                <i class="fas fa-users"></i>
+                                <span>Expert Professional Team</span>
+                            </div>
+                            <div class="dark-feature-item">
+                                <i class="fas fa-star"></i>
+                                <span>Premium Quality Service</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dark-about-visual">
+                        <div class="dark-about-image">
+                            <div class="dark-model-placeholder about-image">
+                                <div class="dark-image-overlay">
+                                    <span>Blue Bird Salon Interior</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dark Contact Section -->
+        <section class="dark-content-section" id="contact">
+            <div class="container">
+                <div class="dark-section-header">
+                    <h2 class="dark-content-title">Get In Touch</h2>
+                    <p class="dark-content-subtitle">Ready to transform your look? Contact us today</p>
+                </div>
+                
+                <div class="dark-contact-content">
+                    <div class="dark-contact-info">
+                        <div class="dark-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="dark-contact-details">
+                                <h4>Visit Us</h4>
+                                <p>123 Beauty Street<br>Premium Plaza, City 12345</p>
+                            </div>
+                        </div>
+                        
+                        <div class="dark-contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div class="dark-contact-details">
+                                <h4>Call Us</h4>
+                                <p>+91-9903850404</p>
+                            </div>
+                        </div>
+                        
+                        <div class="dark-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="dark-contact-details">
+                                <h4>Email Us</h4>
+                                <p>Bluebird@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dark-contact-form">
+                        <form id="contactForm">
+                            <div class="dark-form-group">
+                                <input type="text" id="name" name="name" required>
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="dark-form-group">
+                                <input type="email" id="email" name="email" required>
+                                <label for="email">Email Address</label>
+                            </div>
+                            <div class="dark-form-group">
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
+                            <button type="submit" class="dark-submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dark Footer -->
+        <footer class="dark-premium-footer">
+            <div class="container">
+                <div class="dark-footer-content">
+                    <div class="dark-footer-brand">
+                        <div class="dark-footer-logo">
+                            <img src="logo.jpg" alt="Blue Bird Logo">
+                            <div class="logo-text">
+                                <h3>Blue Bird</h3>
+                                <span>Salon & Spa</span>
+                            </div>
+                        </div>
+                        <p>Experience the pinnacle of beauty and wellness at Blue Bird, where elegance meets excellence.</p>
+                    </div>
+                    
+                    <div class="dark-footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="dark-footer-contact">
+                        <h4>Contact Info</h4>
+                        <p><i class="fas fa-phone"></i> +91-9903850404</p>
+                        <p><i class="fas fa-envelope"></i> Bluebird@gmail.com</p>
+                        <div class="dark-social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dark-footer-bottom">
+                    <p>&copy; 2025 Blue Bird Salon & Spa. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
